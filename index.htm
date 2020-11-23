@@ -1,0 +1,45 @@
+<DOCTYPE html>
+<html lang="tw">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+.full-screen{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(97,224,236,0.6);
+	z-index:10;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+p{
+	color:red;
+	margin:5px;
+	cursor:pointer;
+}
+p:hover{
+	background:yellow;
+}
+</style>
+</head>
+<body>
+	<p>商品說明</p>
+	<h1>阿夸機器人</h1>
+	<div class="full-screen">
+		
+		<img src="https://img.moegirl.org.cn/common/thumb/0/09/78102083_p0.jpg/280px-78102083_p0.jpg">
+	</div>
+<script>
+$("p").click(function(){
+	$(".full-screen").slideToggle();
+});
+$("img").click(function(){
+	$(".full-screen").slideToggle();
+});
+</script>
+</body>
